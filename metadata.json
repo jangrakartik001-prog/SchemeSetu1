@@ -1,0 +1,6 @@
+{
+  "name": "SchemeSetu",
+  "description": "AI-Driven Scheme Matching for Marginalized Entrepreneurs — From eligibility to the right financial path.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
