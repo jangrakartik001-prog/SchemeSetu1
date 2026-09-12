@@ -51,12 +51,12 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>{t('summary.backBtn')}</span>
+            <span>{t('summary.backToProject')}</span>
           </button>
           
           <span className="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-100 text-emerald-800 border border-emerald-200 inline-flex items-center gap-1.5">
             <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
-            <span>{t('summary.completedBadge')}</span>
+            <span>{t('summary.formCompleted')}</span>
           </span>
         </div>
 
@@ -93,10 +93,10 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             <div>
               <h2 className="text-lg font-bold text-slate-900 flex items-center gap-2">
                 <IndianRupee className="w-5 h-5 text-emerald-600" />
-                <span>{t('summary.financeStructureTitle')}</span>
+                <span>{t('summary.finOverviewTitle')}</span>
               </h2>
               <p className="text-xs text-slate-500 mt-0.5">
-                {t('summary.financeStructureSubtitle')}
+                {t('summary.finOverviewSub')}
               </p>
             </div>
             <button
@@ -105,7 +105,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
               className="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-800 hover:text-blue-950 bg-blue-50 px-3 py-1.5 rounded border border-blue-200 transition-colors cursor-pointer"
             >
               <Edit3 className="w-3.5 h-3.5" />
-              <span>{t('summary.editFinances')}</span>
+              <span>{t('common.edit')}</span>
             </button>
           </div>
 
@@ -113,7 +113,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             {/* Total Project Cost */}
             <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                {t('project.metricCost')}
+                {t('summary.totalCost')}
               </span>
               <p className="text-2xl font-extrabold text-slate-900 mt-1">
                 {formatINR(totalCostNum)}
@@ -127,7 +127,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             <div className="bg-orange-50/60 rounded-xl p-5 border border-orange-200">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-wider text-orange-900">
-                  {t('project.metricOwn')}
+                  {t('summary.promoterContrib')}
                 </span>
                 <span className="text-xs font-bold text-orange-800 bg-orange-100 px-2 py-0.5 rounded">
                   {ownPercent.toFixed(1)}%
@@ -145,7 +145,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             <div className="bg-emerald-50/60 rounded-xl p-5 border border-emerald-200">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-wider text-emerald-900">
-                  {t('project.metricRequired')}
+                  {t('summary.requiredDebt')}
                 </span>
                 <span className="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
                   {debtPercent.toFixed(1)}%

@@ -131,18 +131,10 @@ export const BeneficiaryProfileScreen: React.FC<BeneficiaryProfileScreenProps> =
               <button
                 id="beneficiary-preset-artisan"
                 type="button"
-                onClick={() => onLoadPreset('artisan')}
+                onClick={() => onLoadPreset('scenario-a')}
                 className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-blue-500 text-blue-900 font-medium rounded transition-colors cursor-pointer"
               >
                 {t('profile.sampleArtisan')}
-              </button>
-              <button
-                id="beneficiary-preset-food"
-                type="button"
-                onClick={() => onLoadPreset('food-processing')}
-                className="text-xs px-2.5 py-1 bg-white border border-slate-300 hover:border-blue-500 text-blue-900 font-medium rounded transition-colors cursor-pointer"
-              >
-                {t('profile.sampleFood')}
               </button>
             </div>
           )}
