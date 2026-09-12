@@ -129,7 +129,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>{t('project.backBtn')}</span>
+            <span>{t('project.backToProfile')}</span>
           </button>
         </div>
 
@@ -177,7 +177,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
             <div className="border-b border-slate-200 pb-6">
               <h3 className="text-sm font-bold uppercase tracking-wider text-slate-900 mb-4 flex items-center gap-2">
                 <span className="w-1.5 h-4 bg-orange-500 rounded-full"></span>
-                <span>{t('project.secOverview')}</span>
+                <span>{t('project.secFinancials')}</span>
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -351,7 +351,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                   {/* Metric 1 */}
                   <div className="p-3 bg-slate-800/80 rounded-lg border border-slate-700">
-                    <p className="text-xs text-slate-400 font-medium">{t('project.metricCost')}</p>
+                    <p className="text-xs text-slate-400 font-medium">{t('project.totalCost')}</p>
                     <p className="text-lg font-bold text-white mt-0.5">
                       {formatINR(totalCostNum)}
                     </p>
@@ -360,7 +360,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
 
                   {/* Metric 2 */}
                   <div className="p-3 bg-slate-800/80 rounded-lg border border-slate-700">
-                    <p className="text-xs text-slate-400 font-medium">{t('project.metricOwn')}</p>
+                    <p className="text-xs text-slate-400 font-medium">{t('project.promoterContribLabel')}</p>
                     <p className="text-lg font-bold text-orange-400 mt-0.5">
                       {formatINR(ownContributionNum)}
                     </p>
@@ -371,7 +371,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
 
                   {/* Metric 3: Automatically Calculated */}
                   <div className="p-3 bg-blue-950 rounded-lg border border-blue-700/80">
-                    <p className="text-xs text-blue-200 font-medium">{t('project.metricRequired')}</p>
+                    <p className="text-xs text-blue-200 font-medium">{t('project.targetFinancing')}</p>
                     <p className="text-xl font-extrabold text-emerald-400 mt-0.5">
                       {formatINR(calculatedRequiredFinancing)}
                     </p>
@@ -504,7 +504,7 @@ export const ProjectDetailsScreen: React.FC<ProjectDetailsScreenProps> = ({
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-sm font-medium transition-colors cursor-pointer"
                 >
                   <ArrowLeft className="w-4 h-4" />
-                  <span>{t('project.backBtn')}</span>
+                  <span>{t('project.backToProfile')}</span>
                 </button>
 
                 <button

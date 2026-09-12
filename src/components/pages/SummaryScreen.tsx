@@ -145,7 +145,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             <div className="bg-emerald-50/60 rounded-xl p-5 border border-emerald-200">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-semibold uppercase tracking-wider text-emerald-900">
-                  {t('summary.requiredDebt')}
+                  {t('project.targetFinancing')}
                 </span>
                 <span className="text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
                   {debtPercent.toFixed(1)}%
@@ -343,7 +343,7 @@ export const SummaryScreen: React.FC<SummaryScreenProps> = ({
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-3 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-sm font-medium transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>{t('summary.backBtn')}</span>
+            <span>{t('summary.backToProject')}</span>
           </button>
 
           <button
